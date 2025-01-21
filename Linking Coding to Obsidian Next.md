@@ -1,4 +1,7 @@
 ## Lets try
+We have jupyter lab open up to a specific directory, lets link that directory to our obsidian vault so that we can see the files dynamically link them while we write notes.
+
+
 Knowing the ln command to link files in linux lets look it up for macos
 
 we will probably try a symbolic link
