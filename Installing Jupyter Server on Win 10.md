@@ -32,3 +32,37 @@ sudo apt install python3-pip
 ```
 
 
+Running pip freeze we can see our packages.
+
+Lets install venv in our debian python package so we can manage our enviroments with
+
+```
+sudo apt install python3.12-venv
+```
+
+Then running
+
+``` 
+python3 -m venv wsl-example
+
+```
+creates a venv folder in our home dir.
+
+we can activate this virtual environment with 
+
+```
+source wsl-example/bin/activate
+```
+
+This puts us in a virtual environment.
+Running pip freeze we can see no packages installed. 
+
+So lets install jupyter lab with
+```
+pip install jupyterlab
+```
+
+And running the jupyter lab command in the virtual environment we can get the url to the server.
+http://localhost:8888/lab?token=faa8ca536a72b6f8ecc5ec776b4860d870f7b3d8e9eaba55
+
+Easy as that. For the need of different packages we can install each set of packages in the venv.
